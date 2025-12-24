@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="Debug|Win32">
+            <Configuration>Debug</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|Win32">
+            <Configuration>Release</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Debug|x64">
+            <Configuration>Debug</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|x64">
+            <Configuration>Release</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <VCProjectVersion>18.0</VCProjectVersion>
+        <Keyword>Win32Proj</Keyword>
+        <ProjectGuid>{9d6334e8-2dff-4b12-91c2-f39a2697d3f6}</ProjectGuid>
+        <RootNamespace>Educationalproject2026</RootNamespace>
+        <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+    <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v145</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v145</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v145</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v145</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+    <ImportGroup Label="ExtensionSettings"/>
+    <ImportGroup Label="Shared"/>
+    <ImportGroup Label="PropertySheets" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" Label="LocalAppDataPlatform"/>
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" Label="LocalAppDataPlatform"/>
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" Label="LocalAppDataPlatform"/>
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" Label="LocalAppDataPlatform"/>
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros"/>
+    <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+        </ClCompile>
+        <Link>
+            <SubSystem>Console</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+        </ClCompile>
+        <Link>
+            <SubSystem>Console</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+        </ClCompile>
+        <Link>
+            <SubSystem>Console</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+        </ClCompile>
+        <Link>
+            <SubSystem>Console</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <ClCompile Include="Actions\CourseActions.cpp"/>
+        <ClCompile Include="Actions\ProblemActions.cpp"/>
+        <ClCompile Include="Adapters\IO\FileManagerAdapter.cpp"/>
+        <ClCompile Include="Adapters\Repositories\CourseRepositoryAdapter.cpp"/>
+        <ClCompile Include="Adapters\Repositories\ProblemRepositoryAdapter.cpp"/>
+        <ClCompile Include="App\AppController.cpp"/>
+        <ClCompile Include="App\AppState.cpp"/>
+        <ClCompile Include="App\DefaultCourse.cpp"/>
+        <ClCompile Include="App\DefaultProblem.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem001.cpp"/>
+        <ClCompile Include="DataInserters\CourseInserter.cpp"/>
+        <ClCompile Include="DataInserters\ProblemInserter.cpp"/>
+        <ClCompile Include="DataLoaders\CourseLoader.cpp"/>
+        <ClCompile Include="DataLoaders\ProblemLoader.cpp"/>
+        <ClCompile Include="DataModifiers\CourseModifier.cpp"/>
+        <ClCompile Include="DataModifiers\ProblemModifier.cpp"/>
+        <ClCompile Include="DataRemovers\CourseRemover.cpp"/>
+        <ClCompile Include="DataRemovers\ProblemRemover.cpp"/>
+        <ClCompile Include="DataRunner\ProblemRunner.cpp"/>
+        <ClCompile Include="Educational_project2026.cpp"/>
+        <ClCompile Include="Managers\CourseManager.cpp"/>
+        <ClCompile Include="Managers\ProblemManager.cpp"/>
+        <ClCompile Include="Menus\CoursesMenu.cpp"/>
+        <ClCompile Include="Menus\ProblemsMenu.cpp"/>
+        <ClCompile Include="Registry\FileHelpers.cpp"/>
+        <ClCompile Include="tinyxml2\tinyxml2.cpp"/>
+        <ClCompile Include="UIHelpers.cpp"/>
+        <ClCompile Include="VcxprojUpdater\VcxprojUpdater.cpp"/>
+        <ClCompile Include="Views\CoursesView.cpp"/>
+        <ClCompile Include="Views\ProblemsView.cpp"/>
+        <ClCompile Include="Courses\Course02\Problems\c02Problem001.cpp"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="Actions\CourseActions.hpp"/>
+        <ClInclude Include="Actions\ProblemActions.hpp"/>
+        <ClInclude Include="Adapters\IO\FileManagerAdapter.hpp"/>
+        <ClInclude Include="Adapters\Repositories\CourseRepositoryAdapter.hpp"/>
+        <ClInclude Include="Adapters\Repositories\ProblemRepositoryAdapter.hpp"/>
+        <ClInclude Include="App\AppController.hpp"/>
+        <ClInclude Include="App\AppState.hpp"/>
+        <ClInclude Include="App\DefaultCourse.hpp"/>
+        <ClInclude Include="App\DefaultProblem.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem001.hpp"/>
+        <ClInclude Include="DataInserters\CourseInserter.hpp"/>
+        <ClInclude Include="DataInserters\ProblemInserter.hpp"/>
+        <ClInclude Include="DataLoaders\CourseLoader.hpp"/>
+        <ClInclude Include="DataLoaders\ProblemLoader.hpp"/>
+        <ClInclude Include="DataModifiers\CourseModifier.hpp"/>
+        <ClInclude Include="DataModifiers\ProblemModifier.hpp"/>
+        <ClInclude Include="DataRemovers\CourseRemover.hpp"/>
+        <ClInclude Include="DataRemovers\ProblemRemover.hpp"/>
+        <ClInclude Include="DataRunner\ProblemRunner.hpp"/>
+        <ClInclude Include="Interfaces\IO\IFileManager.hpp"/>
+        <ClInclude Include="Interfaces\Repositories\ICourseRepository.hpp"/>
+        <ClInclude Include="Interfaces\Repositories\IProblemRepository.hpp"/>
+        <ClInclude Include="Managers\CourseManager.hpp"/>
+        <ClInclude Include="Managers\ProblemManager.hpp"/>
+        <ClInclude Include="Menus\CoursesMenu.hpp"/>
+        <ClInclude Include="Menus\ProblemsMenu.hpp"/>
+        <ClInclude Include="Models\CourseData.hpp"/>
+        <ClInclude Include="Models\ProblemData.hpp"/>
+        <ClInclude Include="Models\ViewModels.hpp"/>
+        <ClInclude Include="Registry\DispatcherRegistrar.hpp"/>
+        <ClInclude Include="Registry\DispatcherRunner.hpp"/>
+        <ClInclude Include="Registry\FileHelpers.hpp"/>
+        <ClInclude Include="Shared\Files.hpp"/>
+        <ClInclude Include="Shared\Input.hpp"/>
+        <ClInclude Include="tinyxml2\tinyxml2.h"/>
+        <ClInclude Include="UIHelpers.hpp"/>
+        <ClInclude Include="VcxprojUpdater\VcxprojUpdater.hpp"/>
+        <ClInclude Include="Views\CoursesView.hpp"/>
+        <ClInclude Include="Views\ProblemsView.hpp"/>
+        <ClInclude Include="Courses\Course02\Problems\c02Problem001.hpp"/>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+    <ImportGroup Label="ExtensionTargets"/>
+</Project>

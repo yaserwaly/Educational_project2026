@@ -1,11 +1,21 @@
-// Educational_project2026.cpp : This file contains the 'main' function. Program execution begins and ends there.
+﻿// Educational_project2026.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <cstdlib>    // Include cstdlib for rand() and srand() functions.
+#include <ctime>      // Include ctime for the time() function.
+#include "App/AppController.hpp"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
+
+    srand((unsigned)time(NULL)); // Seed random number generator – تهيئة مولّد الأرقام العشوائية
+
+    nsAppController::clsAppController::StartApp(); // Start the application – بدء تشغيل التطبيق
+
+    system("pause>0"); // Pause before exit – توقف مؤقت قبل الإغلاق
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
