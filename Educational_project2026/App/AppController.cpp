@@ -1,12 +1,13 @@
-﻿#include "AppController.hpp"
+﻿#include "pch.h"
+#include "AppController.hpp"
 #include "../Menus/CoursesMenu.hpp"
 #include "../Views/CoursesView.hpp"
 #include "DefaultCourse.hpp"
 #include "../Menus/ProblemsMenu.hpp"
-#include <iostream>
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include <ctime>
 #include "../UIHelpers.hpp"
-#include <algorithm>
+// #include <algorithm>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsAppController {
 

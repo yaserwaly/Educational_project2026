@@ -887,3 +887,212 @@ Run method started with NEW repositories - ???? ????? ??????? ??????????? ??????
 Courses loaded using NEW system: 1
 ========================================
 
+========================================
+Application started with NEW adapters only
+??????? ??? ???????? ???????? ??????? ???
+Timestamp: 1793283104
+========================================
+
+Run method started with NEW repositories - ???? ????? ??????? ??????????? ???????
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+??????? ??? ???????? ???????? ??????? ???
+Timestamp: 1793283446
+========================================
+
+Run method started with NEW repositories - ???? ????? ??????? ??????????? ???????
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+??????? ??? ???????? ???????? ??????? ???
+Timestamp: 1793283558
+========================================
+
+Run method started with NEW repositories - ???? ????? ??????? ??????????? ???????
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+??????? ??? ???????? ???????? ??????? ???
+Timestamp: 1793283739
+========================================
+
+Run method started with NEW repositories - ???? ????? ??????? ??????????? ???????
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+??????? ??? ???????? ???????? ??????? ???
+Timestamp: 1793283919
+========================================
+
+Run method started with NEW repositories - ???? ????? ??????? ??????????? ???????
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793331761
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793332440
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 1
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793333411
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793334547
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793334556
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793334616
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793386311
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793386391
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793386970
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793387450
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793387875
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793387906
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793387949
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+
+========================================
+Application started with NEW adapters only
+التطبيق بدأ باستخدام المحولات الجديدة فقط
+Timestamp: 1793388087
+========================================
+
+Run method started with NEW repositories - بدأت طريقة التشغيل بالمستودعات الجديدة
+
+Courses loaded using NEW system: 2
+========================================
+

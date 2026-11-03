@@ -1,7 +1,8 @@
-﻿#include "CourseLoader.hpp"
-#include <fstream>
-#include <filesystem>
-#include <sstream>
+﻿#include "pch.h"
+#include "CourseLoader.hpp"
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <sstream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace fs = std::filesystem;
 

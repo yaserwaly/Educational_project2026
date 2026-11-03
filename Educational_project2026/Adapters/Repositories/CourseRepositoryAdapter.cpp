@@ -1,8 +1,8 @@
-﻿#include "CourseRepositoryAdapter.hpp"
+﻿#include "pch.h"
+#include "CourseRepositoryAdapter.hpp"
 #include "../IO/FileManagerAdapter.hpp"
-#include <algorithm>
+// #include <algorithm>  // مكرر: موجود أصلاً بـ pch.h
 #include <unordered_set>
-//#include "../../Registry/DispatcherRegistrar.hpp"
 
 namespace nsAdapters {
 
@@ -53,10 +53,8 @@ namespace nsAdapters {
 
             //// ⬇️ مثال على التسجيل (اختياري حسب المعمارية)
             //for (const auto& p : c.Problems) {
-            //    nsDispatcherRegistrar::clsDispatcherRegistrar::Register(p.Namespace, [=]() {
             //        // لازم تكون الدالة موجودة فعليًا
             //        });
-            //    nsDispatcherRegistrar::clsDispatcherRegistrar::Register(c.ID, p.ID, [=]() {
             //        // نفس الشي
             //        });
             //}

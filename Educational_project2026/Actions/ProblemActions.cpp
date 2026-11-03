@@ -1,5 +1,6 @@
-﻿#include "ProblemActions.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "ProblemActions.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include <unordered_set>
 #include <limits>
 #include "../UIHelpers.hpp"

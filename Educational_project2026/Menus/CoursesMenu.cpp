@@ -1,5 +1,6 @@
-﻿#include "CoursesMenu.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "CoursesMenu.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include "../UIHelpers.hpp"
 #include "../Adapters/Repositories/CourseRepositoryAdapter.hpp" // ⬅️ جديد
 #include "../Adapters/Repositories/ProblemRepositoryAdapter.hpp" // ⬅️ جديد

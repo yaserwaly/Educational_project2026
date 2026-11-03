@@ -1,4 +1,5 @@
-﻿//#include "ProblemManager.hpp"
+﻿#include "pch.h"
+//#include "ProblemManager.hpp"
 //#include <fstream>
 //#include <string>
 //#include <vector>
@@ -6,8 +7,6 @@
 //#include <unordered_set>
 //#include <limits>
 //#include "../DataLoaders/ProblemLoader.hpp"
-//#include "../Registry/DispatcherRegistrar.hpp"
-//#include "../Registry/DispatcherRunner.hpp"
 //#include "../DataInserters/ProblemInserter.hpp"
 //#include "../DataModifiers/ProblemModifier.hpp"
 //#include "../DataRemovers/ProblemRemover.hpp"
@@ -27,8 +26,6 @@
 //
 //    // Register a problem's execution function – تسجيل دالة تنفيذ المشكلة
 //    void clsProblemManager::RegisterProblem(int courseId, int problemId, const std::string& fnName, const std::function<void()>& fn) const {
-//        nsDispatcherRegistrar::clsDispatcherRegistrar::Register(fnName, fn);              // تسجيل باسم الدالة
-//        nsDispatcherRegistrar::clsDispatcherRegistrar::Register(courseId, problemId, fn); // تسجيل باستخدام معرفات الدورة والمشكلة
 //    }
 //
 //    //// Create a new problem on disk – إنشاء مشكلة جديدة على القرص
@@ -85,12 +82,10 @@
 //
 //    // Run a problem by its full namespace – تشغيل مشكلة باستخدام namespace الكامل
 //    void clsProblemManager::RunProblemByNamespace(const std::string& ns) {
-//        nsDispatcherRunner::clsDispatcherRunner::Run(ns);
 //    }
 //
 //    // Run a problem by course ID and problem ID – تشغيل مشكلة باستخدام معرف الدورة ومعرف المشكلة
 //    void clsProblemManager::RunProblemById(int courseId, int problemId) {
-//        nsDispatcherRunner::clsDispatcherRunner::Run(courseId, problemId);
 //    }
 //
 //}

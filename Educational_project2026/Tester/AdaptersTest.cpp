@@ -1,5 +1,6 @@
-﻿#include "AdaptersTest.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "AdaptersTest.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include <memory>
 #include "../Adapters/IO/FileManagerAdapter.hpp"
 #include "../Adapters/Repositories/CourseRepositoryAdapter.hpp"

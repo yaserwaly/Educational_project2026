@@ -1,6 +1,7 @@
-﻿#include "DefaultCourse.hpp"
-#include <fstream>
-#include <filesystem>
+﻿#include "pch.h"
+#include "DefaultCourse.hpp"
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsDefaultCourse {
 

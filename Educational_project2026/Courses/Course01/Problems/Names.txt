@@ -1,8 +1,8 @@
-c01Problem001: Problem 01
-c01Problem002: 2222
-c01Problem003: 33
-c01Problem004: 44
-c01Problem005: 55
-c01Problem006: 666
-c01Problem007: 77
-c01Problem008: 88
+c01Problem001: Min 16-Port Switches
+c01Problem002: Optimal 16/24-Port Mix
+c01Problem003: Optimal 16/24/32-Port Mix
+c01Problem004: Lowest Cost Configuration
+c01Problem005: Optimized Cost Search
+c01Problem006: All Optimal Solutions
+c01Problem007: Unique Solutions + Alternative
+c01Problem008: Two-Pass Optimization

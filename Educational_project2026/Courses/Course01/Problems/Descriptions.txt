@@ -1,8 +1,8 @@
-c01Problem001: Problem 01
-c01Problem002: 222
-c01Problem003: 33
-c01Problem004: 44
-c01Problem005: 55
-c01Problem006: 666
-c01Problem007: 77
-c01Problem008: 88
+c01Problem001: Find the minimum number of required 16-port switches.
+c01Problem002: Find the 16/24-port switch mix with the fewest switches.
+c01Problem003: Find the best 16/24/32-port switch combination.
+c01Problem004: Find the lowest-cost switch configuration.
+c01Problem005: Find the lowest-cost solution using an optimized search.
+c01Problem006: Show all configurations with the minimum cost.
+c01Problem007: Show unique minimum-cost solutions and one alternative.
+c01Problem008: Use a two-pass search to find optimal solutions efficiently.

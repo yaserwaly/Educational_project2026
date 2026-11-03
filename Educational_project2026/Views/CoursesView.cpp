@@ -1,5 +1,6 @@
-﻿#include "CoursesView.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "CoursesView.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsCoursesView {
 

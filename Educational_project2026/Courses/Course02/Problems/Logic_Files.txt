@@ -1,0 +1,2 @@
+c02Problem001: c02Problem001::clsProblem001::Run, Courses/Course02/Problems/c02Problem001.hpp
+c02Problem002: c02Problem002::clsProblem002::Run, Courses/Course02/Problems/c02Problem002.hpp

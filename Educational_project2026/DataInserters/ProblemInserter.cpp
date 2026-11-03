@@ -1,8 +1,8 @@
-﻿#include "ProblemInserter.hpp"
-#include <filesystem>
-#include <iostream>
+﻿#include "pch.h"
+#include "ProblemInserter.hpp"
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include "../Adapters/IO/FileManagerAdapter.hpp"
-#include "../VcxprojUpdater/VcxprojUpdater.hpp"
 #include "../Models/CourseData.hpp"
 
 namespace fs = std::filesystem;
@@ -51,22 +51,16 @@ namespace nsProblemInserter {
         if (!FileManager.WriteFile(headerPath, headerContent)) return false;
 
         // 🧠 Generate cpp file content – توليد محتوى ملف cpp
+        // ملاحظة: لم يعد هذا الملف يُضاف لمشروع Visual Studio الرئيسي، ولا يحتاج
+        // تسجيل نفسه بـ DispatcherRegistrar — يُبنى ويُشغَّل لحاله عبر ProblemCompiler
+        // (باستخدام التوقيع المخزّن بـ Logic_Files.txt مباشرة).
         std::string cppContent;
         cppContent += "#include <iostream>\n";
-        cppContent += "#include \"" + headerName + "\"\n";
-        cppContent += "#include \"../../../Registry/DispatcherRegistrar.hpp\"\n\n";
+        cppContent += "#include \"" + headerName + "\"\n\n";
         cppContent += "namespace " + shortName + " {\n\n";
         cppContent += "    void " + className + "::Run() {\n";
         cppContent += "        std::cout << \"Hello from " + Problem.Name + "!\\n\";\n";
         cppContent += "    }\n\n";
-
-        // 🔗 Register problem logic – تسجيل منطق التنفيذ
-        cppContent += "    static bool _reg = ([]() {\n";
-        cppContent += "        nsDispatcherRegistrar::clsDispatcherRegistrar::Register(\"" + shortName + "::" + className + "::Run\", []() {\n";
-        cppContent += "            " + shortName + "::" + className + "::Run();\n";
-        cppContent += "        });\n";
-        cppContent += "        return true;\n";
-        cppContent += "    })();\n\n";
         cppContent += "}\n";
 
         if (!FileManager.WriteFile(cppPath, cppContent)) return false;
@@ -90,19 +84,17 @@ namespace nsProblemInserter {
         if (!FileManager.AppendToFile(fullDescPath, fullDescLine)) return false;
         if (!FileManager.AppendToFile(logicFilesPath, logicLine)) return false;
 
-        // 🛠️ Update project file (.vcxproj) – تعديل ملف المشروع لإضافة ملفات المشكلة
-        const std::string vcxprojPath = "Educational_project2026.vcxproj";
-        const std::string ccppPath = "Courses\\Course" + courseIdText + "\\Problems\\" + cppName;
-        const std::string chppPath = "Courses\\Course" + courseIdText + "\\Problems\\" + headerName;
-
-        std::vector<std::string> newFiles = { ccppPath, chppPath };
-
-        if (nsVcxprojUpdater::clsVcxprojUpdater::AppendFiles(vcxprojPath, newFiles)) {
-            std::cout << "Files added successfully.\n"; // تمت إضافة الملفات بنجاح
-        }
-        else {
-            std::cerr << "Failed to update project.\n"; // فشل تحديث ملف المشروع
-        }
+        // 🛠️ Exercises are intentionally NOT added to the main .vcxproj anymore.
+        // ملفات التمارين لا تُضاف لملف المشروع الرئيسي بعد الآن –
+        // تبقى على القرص فقط، ويتم بناؤها وتشغيلها لحالها عبر ProblemCompiler
+        // (Logic_Files.txt يوثّق مسارها وتوقيعها، وهذا كافٍ للتشغيل).
+        // هذا ما يمنع تضخّم وقت البناء مع ازدياد عدد التمارين.
+        //
+        // const std::string vcxprojPath = "Educational_project2026.vcxproj";
+        // const std::string ccppPath = "Courses\\Course" + courseIdText + "\\Problems\\" + cppName;
+        // const std::string chppPath = "Courses\\Course" + courseIdText + "\\Problems\\" + headerName;
+        // std::vector<std::string> newFiles = { ccppPath, chppPath };
+        // nsVcxprojUpdater::clsVcxprojUpdater::AppendFiles(vcxprojPath, newFiles);
 
         return true;
     }

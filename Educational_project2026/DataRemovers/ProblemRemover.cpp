@@ -1,10 +1,10 @@
-﻿#include "ProblemRemover.hpp"
+﻿#include "pch.h"
+#include "ProblemRemover.hpp"
 #include "../Adapters/IO/FileManagerAdapter.hpp"
-#include "../VcxprojUpdater/VcxprojUpdater.hpp"
-#include <filesystem>
-#include <iostream>
-#include <sstream>
-#include <fstream>
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <sstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace fs = std::filesystem;
 
@@ -80,11 +80,11 @@ namespace nsProblemRemover {
             }
         }
 
-        // Remove from .vcxproj – حذف الملفات من ملف المشروع
-        if (!nsVcxprojUpdater::clsVcxprojUpdater::RemoveFilesFromVcxproj(vcxprojPath, filesToRemove)) {
-            std::cerr << "❌ فشل حذف الملفات من vcxproj.\n";
-            return false;
-        }
+        // ملاحظة: التمارين ما عادت تُضاف لملف .vcxproj أصلاً (راجع ProblemInserter.cpp)،
+        // فما في داعي نحذفها منه هون كمان - منكمل على حذف الملفات الفعلية من القرص مباشرة.
+        // Note: exercises are no longer added to the .vcxproj at all (see ProblemInserter.cpp),
+        // so there is nothing to remove there either - we go straight to deleting files on disk.
+        (void)vcxprojPath; // parameter kept for interface compatibility – أُبقي الباراميتر للتوافق
 
         // Delete physical files – حذف الملفات من القرص
         for (const auto& path : { cppPath, hppPath }) {

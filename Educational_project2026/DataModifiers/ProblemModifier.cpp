@@ -1,9 +1,10 @@
-﻿#include "ProblemModifier.hpp"
+﻿#include "pch.h"
+#include "ProblemModifier.hpp"
 #include "../Adapters/IO/FileManagerAdapter.hpp"
-#include <filesystem>
-#include <iostream>
-#include <sstream>
-#include <fstream>
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <sstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace fs = std::filesystem;
 

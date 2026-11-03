@@ -1,8 +1,9 @@
-﻿#include "VcxprojUpdater.hpp"
+﻿#include "pch.h"
+#include "VcxprojUpdater.hpp"
 #include "../tinyxml2/tinyxml2.h"
-#include <filesystem>
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
 #include <set>
-#include <iostream>
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace fs = std::filesystem;
 using namespace tinyxml2;

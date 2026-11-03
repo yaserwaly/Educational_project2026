@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem005.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -296,12 +295,5 @@ namespace c01Problem005 {
 
         cout << "\nNote: Selection criteria prioritize lowest cost, then lowest surplus, then lowest number of switches.\n";
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem005::clsProblem005::Run", []() {
-            c01Problem005::clsProblem005::Run();
-            });
-        return true;
-        })();
 
 }

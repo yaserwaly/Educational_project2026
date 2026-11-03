@@ -1,10 +1,11 @@
-﻿#include "ProblemRepositoryAdapter.hpp"
+﻿#include "pch.h"
+#include "ProblemRepositoryAdapter.hpp"
 #include "../IO/FileManagerAdapter.hpp"
 //#include "../../Managers/CourseManager.hpp"
 #include "../../Interfaces/Repositories/ICourseRepository.hpp"
 #include "CourseRepositoryAdapter.hpp"
 #include "../../DataLoaders/ProblemLoader.hpp"
-#include <algorithm>
+// #include <algorithm>  // مكرر: موجود أصلاً بـ pch.h
 #include <unordered_set>
 
 namespace nsAdapters {

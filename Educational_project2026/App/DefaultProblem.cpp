@@ -1,6 +1,7 @@
-﻿#include "DefaultProblem.hpp"
-#include <fstream>
-#include <filesystem>
+﻿#include "pch.h"
+#include "DefaultProblem.hpp"
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
 #include "../Adapters/IO/FileManagerAdapter.hpp"
 
 namespace nsDefaultProblem {

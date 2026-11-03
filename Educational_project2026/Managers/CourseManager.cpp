@@ -1,4 +1,5 @@
-﻿//#include "CourseManager.hpp"
+﻿#include "pch.h"
+//#include "CourseManager.hpp"
 //#include <filesystem>
 //#include <unordered_set>
 //#include <limits>

@@ -1,5 +1,6 @@
-﻿#include "ProblemsMenu.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "ProblemsMenu.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include "../Adapters/Repositories/ProblemRepositoryAdapter.hpp"  // ⬅️ جديد
 #include "../Adapters/Repositories/CourseRepositoryAdapter.hpp"   // ⬅️ جديد
 #include "../Views/ProblemsView.hpp"
@@ -10,7 +11,7 @@
 #include "../Registry/FileHelpers.hpp"
 #include "../Menus/CoursesMenu.hpp"
 #include "../App/AppController.hpp"
-#include "../Registry/DispatcherRunner.hpp"  // ⬅️ ضروري لتشغيل المشاكل
+#include "../Compiler/ProblemCompiler.hpp"   // ⬅️ جديد: بناء/تشغيل التمرين منفردًا
 
 using namespace std;
 
@@ -45,10 +46,12 @@ namespace nsProblemsMenu {
 
                 if (UIHelpers::ConfirmYes("Do you Run Problem?")) {
                     system("cls");
-                    nsDispatcherRunner::clsDispatcherRunner::Run(State.selectedProblem.Namespace);  // ⬅️ استخدام مباشر
+                    nsProblemCompiler::clsProblemCompiler::CompileAndRun(
+                        State.selectedProblem.FilePath,
+                        State.selectedProblem.Namespace);  // ⬅️ بناء وتشغيل التمرين فقط، بمعزل عن المشروع الرئيسي
                     UIHelpers::Pause();
-                    Run();
-                    return;
+                    //Run();
+                    //return;
                 }
             }
         }
@@ -106,11 +109,13 @@ namespace nsProblemsMenu {
                 nsProblemsView::clsProblemsView::ShowProblemInfo(State.selectedProblem);
                 if (UIHelpers::ConfirmYes("Do you Run Problem?")) {
                     system("cls");
-                    nsDispatcherRunner::clsDispatcherRunner::Run(State.selectedProblem.Namespace);
+                    nsProblemCompiler::clsProblemCompiler::CompileAndRun(
+                        State.selectedProblem.FilePath,
+                        State.selectedProblem.Namespace);
                 }
             }
             UIHelpers::Pause();
-            Run();
+            //Run();
             break;
         }
 
@@ -134,7 +139,7 @@ namespace nsProblemsMenu {
                 defaultProblem.Save(newCode);
             }
             UIHelpers::Pause();
-            nsAppController::clsAppController::StartApp();
+            //nsAppController::clsAppController::StartApp();
             break;
         }
 
@@ -239,7 +244,7 @@ namespace nsProblemsMenu {
         if (it != courses.end()) {
             State.selectedCourse = *it;
         }
-        Run();
+        //Run();
     }
 
 }

@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem001.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -152,12 +151,5 @@ namespace c01Problem001 {
         
         cout << "\nNote: No search performed. Computed minimal S using 14*S+2 >= H.\n";
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem001::clsProblem001::Run", []() {
-            c01Problem001::clsProblem001::Run();
-            });
-        return true;
-        })();
 
 }
