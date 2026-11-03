@@ -1,5 +1,6 @@
-﻿#include "AppState.hpp"
-#include <algorithm>
+﻿#include "pch.h"
+#include "AppState.hpp"
+// #include <algorithm>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsAppState {
 

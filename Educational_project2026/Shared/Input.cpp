@@ -1,7 +1,8 @@
+#include "pch.h"
 #include "Input.hpp"
-#include <iostream>
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include <limits>
-#include <string>
+// #include <string>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace Input {
 

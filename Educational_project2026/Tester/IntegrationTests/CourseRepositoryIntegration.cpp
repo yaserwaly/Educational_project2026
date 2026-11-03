@@ -1,6 +1,7 @@
-﻿#include <gtest/gtest.h>
+﻿#include "pch.h"
+#include <gtest/gtest.h>
 #include "../../Adapters/Repositories/CourseRepositoryAdapter.hpp"
-#include <filesystem>
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
 
 using namespace nsAdapters;
 

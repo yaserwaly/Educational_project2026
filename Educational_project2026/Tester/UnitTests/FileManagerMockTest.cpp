@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <gtest/gtest.h>
 #include "../Mocks/MockFileManager.hpp"
 //#include "../../Adapters/IO/FileManagerAdapter.hpp"

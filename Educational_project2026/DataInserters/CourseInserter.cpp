@@ -1,8 +1,8 @@
-﻿#include "CourseInserter.hpp"
-#include <filesystem>
-#include <string>
+﻿#include "pch.h"
+#include "CourseInserter.hpp"
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <string>  // مكرر: موجود أصلاً بـ pch.h
 //#include "../Registry/FileHelpers.hpp" // ⬅️ قديم
-#include "../VcxprojUpdater/VcxprojUpdater.hpp"
 #include "../DataInserters/ProblemInserter.hpp"
 #include "../Models/CourseData.hpp"
 #include "../Models/ProblemData.hpp"

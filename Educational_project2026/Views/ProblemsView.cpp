@@ -1,5 +1,6 @@
-﻿#include "ProblemsView.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "ProblemsView.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsProblemsView {
 

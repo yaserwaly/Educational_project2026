@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem002.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -249,12 +248,5 @@ namespace c01Problem002 {
         
         cout << "\nNote: 32-port switches were removed. Selection is based on minimal number of switches, then minimal surplus, then preference for more 24-port switches.\n";
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem002::clsProblem002::Run", []() {
-            c01Problem002::clsProblem002::Run();
-            });
-        return true;
-        })();
 
 }

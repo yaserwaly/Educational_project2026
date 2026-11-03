@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem007.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -320,12 +319,5 @@ namespace c01Problem007 {
         cout << "\nSummary (first minimum-cost solution):\n";
         PrintSolutionDetails(result);
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem007::clsProblem007::Run", []() {
-            c01Problem007::clsProblem007::Run();
-        });
-        return true;
-    })();
 
 }

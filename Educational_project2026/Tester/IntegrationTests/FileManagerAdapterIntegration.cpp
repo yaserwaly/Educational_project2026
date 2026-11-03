@@ -1,5 +1,6 @@
-﻿#include <gtest/gtest.h>
-#include <filesystem>
+﻿#include "pch.h"
+#include <gtest/gtest.h>
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
 #include "../../Adapters/IO/FileManagerAdapter.hpp"
 
 using namespace nsAdapters;

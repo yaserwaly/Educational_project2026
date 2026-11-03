@@ -1,5 +1,6 @@
-﻿#include "CourseActions.hpp"
-#include <iostream>
+﻿#include "pch.h"
+#include "CourseActions.hpp"
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 #include "../UIHelpers.hpp"
 //#include "../Managers/CourseManager.hpp"
 #include "../DataInserters/CourseInserter.hpp"

@@ -103,7 +103,11 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\googletest\googletest\include;C:\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\googletest\googletest\include;C:\googletest\googlemock\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,7 +141,7 @@
     <ClCompile Include="App\AppState.cpp" />
     <ClCompile Include="App\DefaultCourse.cpp" />
     <ClCompile Include="App\DefaultProblem.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem001.cpp" />
+    <ClCompile Include="Compiler\ProblemCompiler.cpp" />
     <ClCompile Include="DataInserters\CourseInserter.cpp" />
     <ClCompile Include="DataInserters\ProblemInserter.cpp" />
     <ClCompile Include="DataLoaders\CourseLoader.cpp" />
@@ -146,12 +150,15 @@
     <ClCompile Include="DataModifiers\ProblemModifier.cpp" />
     <ClCompile Include="DataRemovers\CourseRemover.cpp" />
     <ClCompile Include="DataRemovers\ProblemRemover.cpp" />
-    <ClCompile Include="DataRunner\ProblemRunner.cpp" />
     <ClCompile Include="Educational_project2026.cpp" />
     <ClCompile Include="Managers\CourseManager.cpp" />
     <ClCompile Include="Managers\ProblemManager.cpp" />
     <ClCompile Include="Menus\CoursesMenu.cpp" />
     <ClCompile Include="Menus\ProblemsMenu.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="Registry\FileHelpers.cpp" />
     <ClCompile Include="Shared\Input.cpp" />
     <ClCompile Include="Tester\AdaptersTest.cpp" />
@@ -166,16 +173,8 @@
     <ClCompile Include="Tester\UnitTests\main.cpp" />
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="UIHelpers.cpp" />
-    <ClCompile Include="VcxprojUpdater\VcxprojUpdater.cpp" />
     <ClCompile Include="Views\CoursesView.cpp" />
     <ClCompile Include="Views\ProblemsView.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem002.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem003.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem004.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem005.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem006.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem007.cpp" />
-    <ClCompile Include="Courses\Course01\Problems\c01Problem008.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions\CourseActions.hpp" />
@@ -187,7 +186,7 @@
     <ClInclude Include="App\AppState.hpp" />
     <ClInclude Include="App\DefaultCourse.hpp" />
     <ClInclude Include="App\DefaultProblem.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem001.hpp" />
+    <ClInclude Include="Compiler\ProblemCompiler.hpp" />
     <ClInclude Include="DataInserters\CourseInserter.hpp" />
     <ClInclude Include="DataInserters\ProblemInserter.hpp" />
     <ClInclude Include="DataLoaders\CourseLoader.hpp" />
@@ -196,7 +195,6 @@
     <ClInclude Include="DataModifiers\ProblemModifier.hpp" />
     <ClInclude Include="DataRemovers\CourseRemover.hpp" />
     <ClInclude Include="DataRemovers\ProblemRemover.hpp" />
-    <ClInclude Include="DataRunner\ProblemRunner.hpp" />
     <ClInclude Include="Interfaces\IO\IFileManager.hpp" />
     <ClInclude Include="Interfaces\Repositories\ICourseRepository.hpp" />
     <ClInclude Include="Interfaces\Repositories\IProblemRepository.hpp" />
@@ -207,8 +205,7 @@
     <ClInclude Include="Models\CourseData.hpp" />
     <ClInclude Include="Models\ProblemData.hpp" />
     <ClInclude Include="Models\ViewModels.hpp" />
-    <ClInclude Include="Registry\DispatcherRegistrar.hpp" />
-    <ClInclude Include="Registry\DispatcherRunner.hpp" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="Registry\FileHelpers.hpp" />
     <ClInclude Include="Shared\Files.hpp" />
     <ClInclude Include="Shared\Input.hpp" />
@@ -220,16 +217,8 @@
     <ClInclude Include="Tester\Mocks\MockFileManager.hpp" />
     <ClInclude Include="tinyxml2\tinyxml2.h" />
     <ClInclude Include="UIHelpers.hpp" />
-    <ClInclude Include="VcxprojUpdater\VcxprojUpdater.hpp" />
     <ClInclude Include="Views\CoursesView.hpp" />
     <ClInclude Include="Views\ProblemsView.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem002.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem003.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem004.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem005.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem006.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem007.hpp" />
-    <ClInclude Include="Courses\Course01\Problems\c01Problem008.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

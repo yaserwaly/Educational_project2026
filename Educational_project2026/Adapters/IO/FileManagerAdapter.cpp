@@ -1,9 +1,10 @@
-﻿#include "FileManagerAdapter.hpp"
-#include <filesystem>
-#include <fstream>
-#include <sstream>
+﻿#include "pch.h"
+#include "FileManagerAdapter.hpp"
+// #include <filesystem>  // مكرر: موجود أصلاً بـ pch.h
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <sstream>  // مكرر: موجود أصلاً بـ pch.h
 #include <iomanip>
-#include <string>
+// #include <string>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace fs = std::filesystem;
 

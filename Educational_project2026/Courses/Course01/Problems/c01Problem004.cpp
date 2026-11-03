@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem004.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -283,12 +282,5 @@ namespace c01Problem004 {
         cout << "If you want to change the uplink policy (e.g., central uplink or only subtract 1 port on first/last),\n";
         cout << "the formula can be adjusted easily.\n";
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem004::clsProblem004::Run", []() {
-            c01Problem004::clsProblem004::Run();
-            });
-        return true;
-        })();
 
 }

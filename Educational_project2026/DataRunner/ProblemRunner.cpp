@@ -1,4 +1,5 @@
-﻿#include "../Registry/DispatcherRunner.hpp"
+﻿#include "pch.h"
+#include "../Registry/DispatcherRunner.hpp"
 #include "ProblemRunner.hpp"
 
 namespace ProblemRunner {

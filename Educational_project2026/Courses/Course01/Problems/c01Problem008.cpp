@@ -1,6 +1,5 @@
 #include <iostream>
 #include "c01Problem008.hpp"
-#include "../../../Registry/DispatcherRegistrar.hpp"
 
 #include "../../../Shared/Input.hpp"
 
@@ -200,12 +199,5 @@ namespace c01Problem008 {
         auto grouped = ComputeGroupedSolutions(deviceCount);
         PrintGroupedSolutions(grouped, deviceCount);
     }
-
-    static bool _reg = ([]() {
-        nsDispatcherRegistrar::clsDispatcherRegistrar::Register("c01Problem008::clsProblem008::Run", []() {
-            c01Problem008::clsProblem008::Run();
-            });
-        return true;
-        })();
 
 } // namespace c01Problem008

@@ -1,8 +1,8 @@
-c01Problem001: Problem 01
-c01Problem002: 22
-c01Problem003: 33
-c01Problem004: 4
-c01Problem005: 55
-c01Problem006: 66
-c01Problem007: 77
-c01Problem008: 88
+c01Problem001: Calculate the minimum number of 16-port switches needed while accounting for switch-to-switch links.
+c01Problem002: Evaluate all 16-port and 24-port combinations and select the one using the fewest switches.
+c01Problem003: Evaluate all 16-port, 24-port, and 32-port combinations and find the solution with the fewest switches.
+c01Problem004: Find the cheapest switch combination that provides enough capacity for all devices.
+c01Problem005: Solve the minimum-cost problem using smarter search limits for better performance.
+c01Problem006: Display every switch configuration that achieves the minimum possible cost.
+c01Problem007: Display all unique minimum-cost configurations and one solution from the next cost level.
+c01Problem008: Use a two-pass search with pruning to efficiently find optimal solutions for large inputs.

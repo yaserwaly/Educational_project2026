@@ -1,9 +1,10 @@
-﻿#include "ProblemLoader.hpp"
+﻿#include "pch.h"
+#include "ProblemLoader.hpp"
 #include "../Models/ProblemData.hpp"
-#include <fstream>
-#include <string>
-#include <vector>
-#include <iostream>
+// #include <fstream>  // مكرر: موجود أصلاً بـ pch.h
+// #include <string>  // مكرر: موجود أصلاً بـ pch.h
+// #include <vector>  // مكرر: موجود أصلاً بـ pch.h
+// #include <iostream>  // مكرر: موجود أصلاً بـ pch.h
 
 namespace nsProblemLoader {
 
