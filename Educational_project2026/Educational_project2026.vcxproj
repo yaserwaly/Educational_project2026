@@ -153,6 +153,7 @@
     <ClCompile Include="Menus\CoursesMenu.cpp" />
     <ClCompile Include="Menus\ProblemsMenu.cpp" />
     <ClCompile Include="Registry\FileHelpers.cpp" />
+    <ClCompile Include="Shared\Input.cpp" />
     <ClCompile Include="Tester\AdaptersTest.cpp" />
     <ClCompile Include="Tester\Fakes\CourseRepositoryFakeTest.cpp" />
     <ClCompile Include="Tester\Fakes\FileManagerFakeTest.cpp" />
@@ -168,6 +169,13 @@
     <ClCompile Include="VcxprojUpdater\VcxprojUpdater.cpp" />
     <ClCompile Include="Views\CoursesView.cpp" />
     <ClCompile Include="Views\ProblemsView.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem002.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem003.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem004.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem005.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem006.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem007.cpp" />
+    <ClCompile Include="Courses\Course01\Problems\c01Problem008.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions\CourseActions.hpp" />
@@ -204,6 +212,7 @@
     <ClInclude Include="Registry\FileHelpers.hpp" />
     <ClInclude Include="Shared\Files.hpp" />
     <ClInclude Include="Shared\Input.hpp" />
+    <ClInclude Include="Shared\oldInput.hpp" />
     <ClInclude Include="Tester\AdaptersTest.hpp" />
     <ClInclude Include="Tester\Fakes\FakeCourseRepository.hpp" />
     <ClInclude Include="Tester\Fakes\FakeFileManager.hpp" />
@@ -214,6 +223,13 @@
     <ClInclude Include="VcxprojUpdater\VcxprojUpdater.hpp" />
     <ClInclude Include="Views\CoursesView.hpp" />
     <ClInclude Include="Views\ProblemsView.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem002.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem003.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem004.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem005.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem006.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem007.hpp" />
+    <ClInclude Include="Courses\Course01\Problems\c01Problem008.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

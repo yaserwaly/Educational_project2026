@@ -103,10 +103,13 @@
             <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <ConformanceMode>true</ConformanceMode>
             <LanguageStandard>stdcpp20</LanguageStandard>
+            <AdditionalIncludeDirectories>C:\googletest\googletest\include;C:\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
         </ClCompile>
         <Link>
             <SubSystem>Console</SubSystem>
             <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>C:\googletest\out\build\x64-Debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>gtest.lib;gtest_main.lib;gmock.lib;gmock_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
@@ -150,12 +153,27 @@
         <ClCompile Include="Menus\CoursesMenu.cpp"/>
         <ClCompile Include="Menus\ProblemsMenu.cpp"/>
         <ClCompile Include="Registry\FileHelpers.cpp"/>
+        <ClCompile Include="Tester\AdaptersTest.cpp"/>
+        <ClCompile Include="Tester\Fakes\CourseRepositoryFakeTest.cpp"/>
+        <ClCompile Include="Tester\Fakes\FileManagerFakeTest.cpp"/>
+        <ClCompile Include="Tester\IntegrationTests\CourseRepositoryIntegration.cpp"/>
+        <ClCompile Include="Tester\IntegrationTests\FileManagerAdapterIntegration.cpp"/>
+        <ClCompile Include="Tester\UnitTests\CourseRepositoryMockTest.cpp"/>
+        <ClCompile Include="Tester\UnitTests\CourseRepositoryTest.cpp"/>
+        <ClCompile Include="Tester\UnitTests\FileManagerMockTest.cpp"/>
+        <ClCompile Include="Tester\UnitTests\FileManagerTest.cpp"/>
+        <ClCompile Include="Tester\UnitTests\main.cpp"/>
         <ClCompile Include="tinyxml2\tinyxml2.cpp"/>
         <ClCompile Include="UIHelpers.cpp"/>
         <ClCompile Include="VcxprojUpdater\VcxprojUpdater.cpp"/>
         <ClCompile Include="Views\CoursesView.cpp"/>
         <ClCompile Include="Views\ProblemsView.cpp"/>
-        <ClCompile Include="Courses\Course02\Problems\c02Problem001.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem002.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem003.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem004.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem005.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem006.cpp"/>
+        <ClCompile Include="Courses\Course01\Problems\c01Problem007.cpp"/>
     </ItemGroup>
     <ItemGroup>
         <ClInclude Include="Actions\CourseActions.hpp"/>
@@ -192,12 +210,22 @@
         <ClInclude Include="Registry\FileHelpers.hpp"/>
         <ClInclude Include="Shared\Files.hpp"/>
         <ClInclude Include="Shared\Input.hpp"/>
+        <ClInclude Include="Tester\AdaptersTest.hpp"/>
+        <ClInclude Include="Tester\Fakes\FakeCourseRepository.hpp"/>
+        <ClInclude Include="Tester\Fakes\FakeFileManager.hpp"/>
+        <ClInclude Include="Tester\Mocks\MockCourseRepository.hpp"/>
+        <ClInclude Include="Tester\Mocks\MockFileManager.hpp"/>
         <ClInclude Include="tinyxml2\tinyxml2.h"/>
         <ClInclude Include="UIHelpers.hpp"/>
         <ClInclude Include="VcxprojUpdater\VcxprojUpdater.hpp"/>
         <ClInclude Include="Views\CoursesView.hpp"/>
         <ClInclude Include="Views\ProblemsView.hpp"/>
-        <ClInclude Include="Courses\Course02\Problems\c02Problem001.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem002.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem003.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem004.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem005.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem006.hpp"/>
+        <ClInclude Include="Courses\Course01\Problems\c01Problem007.hpp"/>
     </ItemGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
     <ImportGroup Label="ExtensionTargets"/>

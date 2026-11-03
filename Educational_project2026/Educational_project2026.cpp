@@ -5,6 +5,7 @@
 #include <cstdlib>    // Include cstdlib for rand() and srand() functions.
 #include <ctime>      // Include ctime for the time() function.
 #include "App/AppController.hpp"
+#include "Tester/AdaptersTest.hpp"
 
 int main()
 {
@@ -13,6 +14,8 @@ int main()
     srand((unsigned)time(NULL)); // Seed random number generator – تهيئة مولّد الأرقام العشوائية
 
     nsAppController::clsAppController::StartApp(); // Start the application – بدء تشغيل التطبيق
+
+	//TestAdapters(); // Test the new adapters – اختبار المحولات الجديدة
 
     system("pause>0"); // Pause before exit – توقف مؤقت قبل الإغلاق
     return 0;

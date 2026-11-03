@@ -49,6 +49,10 @@ namespace UIHelpers {
         std::string answer;
         std::cout << question << " (y/n): ";
         std::getline(std::cin, answer);
+        while (answer != "y" && answer != "Y" && answer != "n" && answer != "N") {
+            std::cout << "Invalid input. Please enter 'y' or 'n': ";
+            std::getline(std::cin, answer);
+        }
         return (answer == "y" || answer == "Y");
     }
 
